@@ -10,8 +10,8 @@
     <script defer src="scripts.js"></script>
     <link rel="icon" href="favicon.ico" type="image/icon type">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="OSS | Hyperation Bypassed">
-    <meta property="og:description" content="With The Power Of V7 Everything Is Possible">
+    <meta property="og:title" content="OSS Script Hub">
+    <meta property="og:description" content="OSS Script Hub - Exploit Like A Beast 💯💯💯">
     <meta property="og:image" content="favicon.ico">
 </head>
 <body>
@@ -86,26 +86,26 @@
                 <h2><i class="fas fa-dollar-sign colorfade-icon"></i> Pricing</h2>
                 <div class="pricing-container">
                     <div class="pricing-card">
-                        <h3>$0 Tier (Free)</h3>
+                        <h3>$5 Tier (Basic)</h3>
                         <ul>
-                            <li>Free Arsenal Script</li>
-                            <li>Access To Update Leaks</li>
-                            <li>Discord Support Only</li>
+                            <li>Basic script package</li>
+                            <li>Access to Private forums</li>
+                            <li>Direct developer contact</li>
                         </ul>
                     </div>
                     <div class="pricing-card">
-                        <h3>$5 Tier (Advanced)</h3>
+                        <h3>$10 Tier (Advanced)</h3>
                         <ul>
-                            <li>Advanced Scripting Services</li>
+                            <li>Enhanced script package</li>
                             <li>Priority access to updates</li>
                             <li>Direct developer contact</li>
                         </ul>
                     </div>
                     <div class="pricing-card">
-                        <h3>$10 Tier (Premium)</h3>
+                        <h3>$15 Tier (Premium)</h3>
                         <ul>
-                            <li>Premium Scripting Services</li>
-                            <li>More Scripts For Games</li>
+                            <li>Premium script package</li>
+                            <li>Customization options</li>
                             <li>Direct developer contact</li>
                         </ul>
                     </div>
@@ -139,7 +139,7 @@
         </section>
         <section>
             <p style="text-align: center; margin-top: 10px;" class="custom-selection">
-                With The Power Of V7 Everything Is Possible
+                With The Power Of V7 Everything Is Possbile
             </p>
             <div class="screenshot">
                 <div class="features-wrapper">
@@ -151,7 +151,7 @@
             <div style="display: flex; justify-content: center; margin-top: 30px;">
                 <div style="padding: 15px 20px; border-radius: 5px; background-color: #121212; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border: 1px solid #fff; font-family: 'Poppins', sans-serif; display: inline-flex; align-items: center;">
                     <p class="blurred-text" style="color: #f0f0f0; font-size: 0.9em; margin: 0; white-space: nowrap;" id="codeText">
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/ossfr/OSS/main/arsenal-obfuscated.lua"))()
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/PrimelusGT/OSS/main/arsenal-obfuscated.lua"))()
                     </p>
                     <button class="copybtn" onclick="copyToClipboard()">
                         Copy <i class="fas fa-copy"></i>
@@ -180,21 +180,15 @@
             const y = e.clientY - rect.top;
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
-
-            // Calculate rotation angles
-            const rotateX = (y - centerY) / 10; // Adjust sensitivity if needed
-            const rotateY = (centerX - x) / 10; // Adjust sensitivity if needed
-
-            // Clamp the rotation values to avoid excessive tilting
+            const rotateX = (y - centerY) / 10; 
+            const rotateY = (centerX - x) / 10;
             const clampedRotateX = Math.max(-20, Math.min(20, rotateX));
             const clampedRotateY = Math.max(-20, Math.min(20, rotateY));
 
-            // Apply the transformation directly
             screenshotImg.style.transform = `rotateX(${clampedRotateX}deg) rotateY(${clampedRotateY}deg)`;
         });
 
         screenshotImg.addEventListener('mouseleave', () => {
-            // The CSS transition will handle the smooth return to default
             screenshotImg.style.transform = 'rotateX(0deg) rotateY(0deg)';
         });
 
@@ -208,6 +202,23 @@
             document.body.removeChild(tempInput);
             alert('Copied to clipboard: ' + codeText);
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('learnMoreButton');
+            const fadeInText = document.getElementById('fadeInText');
+            let hoverTimer;
+
+            button.addEventListener('mouseover', () => {
+                hoverTimer = setTimeout(() => {
+                    fadeInText.classList.add('show');
+                }, 3000);
+            });
+
+            button.addEventListener('mouseleave', () => {
+                clearTimeout(hoverTimer);
+                fadeInText.classList.remove('show');
+            });
+        });
     </script>
 </body>
 </html>
