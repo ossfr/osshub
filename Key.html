@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSS Hub - Key</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="codeContainer">
+        <p class="blurred-text" id="codeText">
+            OSSKEY-e0golpy8oxo01m3r95qbz2wexaretnsc
+        </p>
+        <button class="copybtn" onclick="copyToClipboard()">
+            Copy <i class="fas fa-copy"></i>
+        </button>
+    </div>
+
+    <p id="headerText">
+        Copy The Key Above And Paste In The Key System
+        <i class="fas fa-cloud"></i>
+    </p>
+
+    <script>
+        function copyToClipboard() {
+            const codeText = document.getElementById('codeText').textContent;
+            const tempInput = document.createElement('input');
+            tempInput.value = codeText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Copied to clipboard: ' + codeText);
+        }
+    </script>
+</body>
+</html>
