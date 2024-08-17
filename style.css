@@ -9,14 +9,7 @@
     color: #f0f0f0;
     overflow: hidden;
     position: relative;
-    opacity: 0; /* Start invisible */
-    animation: fadeIn 1.5s forwards; /* Fade-in animation */
  }
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 
 /* Background Blobs */
 .background-blobs {
