@@ -1,15 +1,21 @@
-body {
+ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #0d0d0d; /* Darker background color */
     font-family: 'Poppins', sans-serif;
     color: #f0f0f0;
     overflow: hidden;
     position: relative;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1.5s forwards; /* Fade-in animation */
+ }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Background Blobs */
