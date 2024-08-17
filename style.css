@@ -1,14 +1,13 @@
  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: #f0f0f0;
-    overflow: hidden;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1e1e1e;
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
  }
 
 /* Background Blobs */
