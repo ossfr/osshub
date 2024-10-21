@@ -1,0 +1,301 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset & General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #121212; /* Dark background for contrast */
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 188, 212, 0.8);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 188, 212, 1);
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    background: linear-gradient(145deg, #1b1b1b, #2d2d2d);
+    border-radius: 30px;
+    padding: 60px;
+    max-width: 1200px; /* Increased maximum width */
+    width: 90%;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.9);
+    gap: 50px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s, box-shadow 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.4);
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0, 255, 220, 0.5);
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.name:hover {
+    color: #00bcd4;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #bbb;
+    letter-spacing: 0.5px;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+}
+
+.github-icon, .discord-icon {
+    font-size: 28px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.github-icon:hover, .discord-icon:hover {
+    color: #00bcd4;
+}
+
+/* Discord Icon Styling */
+.discord-icon {
+    color: #7289da; /* Discord's brand color */
+}
+
+.discord-icon:hover {
+    color: #5b6eae; /* Darker shade on hover */
+}
+
+/* Details Section */
+.details {
+    width: 65%;
+}
+
+.details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ddd;
+    padding-bottom: 8px;
+}
+
+.details p {
+    margin: 10px 0 30px;
+    color: #b0b0b0;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.skill {
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0; /* Darker text for better contrast */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: filter 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+}
+
+.skill i {
+    font-size: 22px; /* Increased icon size */
+    color: #00bcd4; /* Icon color */
+}
+
+.skill:hover {
+    filter: brightness(1.25);
+}
+
+/* Projects Section */
+.projects {
+    background: linear-gradient(145deg, #1b1b1b, #2d2d2d);
+    border-radius: 30px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1200px; /* Same width as the container */
+    width: 90%;
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.9);
+}
+
+.projects h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ddd;
+    text-align: center;
+}
+
+.project {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #fff; /* White outline */
+    margin-top: 15px;
+}
+
+.project h3 {
+    font-size: 22px;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 15px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .profile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .projects {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 24px;
+    }
+
+    .skill {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying Fade-in Animation to the body */
+body {
+    animation: fadeIn 0.5s forwards; /* 0.5s fade-in duration */
+}
+
+/* Advanced Text Shadow */
+.name {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.tagline {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.details h2,
+.projects h2 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
